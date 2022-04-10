@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+<style>
+form{
+    border-radius: 10%;
+    display: inline-block;
+    background-color: aqua;
+    padding: 2%;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.053em;
+    font-weight: 600;
+}
+h1{
+    font-size: 29px;
+    line-height: 41px;
+    letter-spacing: 1.86px;
+    font-style: normal;
+    font-weight: 500;
+    position: relative;
+    left: 11%;
+}
+label{
+    font-size: 20px;
+    line-height: 44px;
+    letter-spacing: 1.64px;
+}
+
+input{
+padding: 5px;
+position: relative;
+left: 5px;
+}
+p{
+    bottom: 15px;
+    color: blue;
+    font-size: 11px;
+    letter-spacing: 2.08px;
+    position: relative;
+    left: 65%;
+}
+#btn1{
+    background-color: rgba(0, 0, 0, 0.363);
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 70%;
+    padding: 2px;
+    width: 30%;
+    height: 25px;
+}
+#btn2{
+    background-color: rgba(0, 0, 0, 0.363);
+    color: rgb(255, 255, 255);
+    position: relative;
+    padding: 2px;
+    right: 32%;
+    width: 30%;
+    height: 25px;
+}
+
+
+</style>
+</head>
+<body>
+<!--  // increment ++ and decrement -- 
+    <button id="subtract">-</button>  
+<input type="number" value="0" id="input">
+<button id="add">+</button> 
+<script>
+    let btnadd= document.querySelector('#add');
+    let btnsubtract= document.querySelector('#subtract');
+    let input= document.querySelector('#input');
+btnadd.addEventListener('click',()=>{
+    input.value= parseInt(input.value)+1;
+});
+btnsubtract.addEventListener('click',()=>{
+    input.value= parseInt(input.value)-1;
+}); 
+</script>-->
+<div>
+    <form name="myForm" action="/action_page.php" onsubmit="validateForm()" method="post" required>
+        <h1> Consumer Login</h1>
+      <label>User Name:</label> <input type="text" name="fname"><br>
+      <label> Password:</label><input type="password" name="pass" style="position:relative;left: 24px;"><br>
+      <p> Forget password</p>
+      <button type="submit" value="Login" id="btn1">Login</button>
+      <button type="submit" value="Login" id="btn2">Register</button>  
+    </form>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  var y = document.forms["myForm"]["pass"].value;
+  if (x == "" || y == "") {
+    alert("Name and password must be filled out");
+    return false;
+  }
+}
+</script>
+</body>
+</html>
