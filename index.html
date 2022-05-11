@@ -62,11 +62,17 @@ p{
     width: 30%;
     height: 25px;
 }
-
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  margin-right: 15%;
+}
 
 </style>
 </head>
-<body>
+<body background="https://img.freepik.com/free-photo/bitcoin-mobile-business-concept-3d-renderingxa_35719-6029.jpg?w=996">
 <!--  // increment ++ and decrement -- 
     <button id="subtract">-</button>  
 <input type="number" value="0" id="input">
@@ -83,6 +89,7 @@ btnsubtract.addEventListener('click',()=>{
 }); 
 </script>-->
 <div>
+<div class="main">
     <form name="myForm" action="/action_page.php" onsubmit="validateForm()" method="post" required>
         <h1> Consumer Login</h1>
       <label>User Name:</label> <input type="text" name="fname"><br>
@@ -91,6 +98,8 @@ btnsubtract.addEventListener('click',()=>{
       <button type="submit" value="Login" id="btn1">Login</button>
       <button type="submit" value="Login" id="btn2">Register</button>  
     </form>
+</div>
+</div>
 <script>
 function validateForm() {
   var x = document.forms["myForm"]["fname"].value;
